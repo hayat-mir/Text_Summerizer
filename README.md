@@ -77,17 +77,22 @@ summarizer/
 
 ⚙️ Installation
 1. Clone the Repository
-git clone https://github.com/<your-username>/drive-summarizer.git
+git clone [https://github.com/<your-username>/drive-summarizer.git](https://github.com/hayat-mir/Text_Summerizer.git)
 cd drive-summarizer
 
-2. Create a Virtual Environment
+
+3. Create a Virtual Environment
 python -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 
-3. Install Dependencies
+
+
+4. Install Dependencies
 pip install -r requirements.txt
 
-4. Configure Google Drive API
+
+
+6. Configure Google Drive API
 
 Go to Google Cloud Console
 .
@@ -99,6 +104,8 @@ Create OAuth 2.0 credentials → Download the JSON file.
 Save it as credentials.json in your project root.
 
 The app will prompt you to authenticate during first Drive access.
+
+
 
 ▶️ Running the App
 streamlit run app.py
@@ -114,6 +121,8 @@ Select 📤 Local Upload in the sidebar.
 Upload a .pdf, .docx, or .txt file.
 
 Click 🚀 Generate Summaries.
+
+
 
 View:
 
@@ -135,9 +144,6 @@ Select one or multiple files → 🚀 Process Selected Files.
 
 Download all results as a CSV via the 💾 Export Results section.
 
-📊 Output Example
-Filename	Extractive ROUGE-L	Abstractive ROUGE-L	Extractive Summary	Abstractive Summary
-report.pdf	0.6123	0.6578	Shortened text summary...	AI-generated concise text...
 🧠 Evaluation Metrics
 Metric	Description
 ROUGE-1	Overlap of unigrams between original and summary
